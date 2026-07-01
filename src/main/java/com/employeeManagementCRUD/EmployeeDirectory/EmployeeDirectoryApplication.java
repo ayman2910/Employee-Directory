@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class EmployeeDirectoryApplication {
 
 	public static void main(String[] args) {
+		System.out.println("no datasource configured");
 		SpringApplication.run(EmployeeDirectoryApplication.class, args);
 	}
 
