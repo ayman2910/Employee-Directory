@@ -1,10 +1,9 @@
-package com.employeeManagementCRUD.EmployeeDirectory.DAO;
+package com.employeeManagementCRUD.EmployeeDirectory.Service;
 
 import com.employeeManagementCRUD.EmployeeDirectory.Entity.Employee;
 
 import java.util.List;
 
-public interface EmployeeDAO {
+public interface EmployeeService {
     List<Employee> findAll();
-
 }
