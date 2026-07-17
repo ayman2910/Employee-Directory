@@ -42,4 +42,8 @@ public class EmployeeServiceImpl implements EmployeeService {
         return employeeDAO.findByRole(role);
     }
 
+    public List<String> findByEmail(String email) {
+        return employeeDAO.findByEmail(email);
+    }
+
 }

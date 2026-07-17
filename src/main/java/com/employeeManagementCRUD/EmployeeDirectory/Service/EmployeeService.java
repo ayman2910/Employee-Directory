@@ -10,4 +10,5 @@ public interface EmployeeService {
     Employee save(Employee employee);
     void deleteById(int id);
     List<Employee> findByRole(String role);
+    List<String> findByEmail(String email);
 }

@@ -45,4 +45,11 @@ public class EmployeeDAOjpaImpl implements EmployeeDAO {
         List<Employee> theEmployees = theQuery.getResultList();
         return theEmployees;
     }
+    public List<String> findByEmail(String email) {
+        TypedQuery<String> theQuery = entityManager.createQuery("select firstName from Employee where email like :email", String.class);
+        theQuery.setParameter("email","%"+ email);
+        List<String> theEmployees = theQuery.getResultList();
+        return theEmployees;
+
+    }
 }
